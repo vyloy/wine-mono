@@ -1,0 +1,8 @@
+--- a/mono/data/lldb/mono.py	2020-09-29 14:53:36.661050170 +0800
++++ b/mono/data/lldb/mono.py	2020-09-29 15:02:02.996757375 +0800
+@@ -171,4 +171,4 @@
+ # Print the method at the provided ip
+ lldb.debugger.HandleCommand ("command regex pmip 's/^$/p mono_print_method_from_ip((void*)$pc)/' 's/(.+)/p mono_print_method_from_ip((void*)(%1))/'")
+ 
+-print "Mono support mode loaded."
++print ("Mono support mode loaded.")
